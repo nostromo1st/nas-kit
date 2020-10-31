@@ -27,9 +27,9 @@ def install():
 
     ### Rpi_epd_lib    
     do(msg="wget BCM2835",
-        cmd='run_command("wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz")')
+        cmd='run_command("wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.68.tar.gz")')
     do(msg="tar and make install BCM2835",
-        cmd='run_command("tar zxvf bcm2835-1.60.tar.gz && cd bcm2835-1.60/ && sudo ./configure && sudo make && sudo make check && sudo make install")')
+        cmd='run_command("tar zxvf bcm2835-1.68.tar.gz && cd bcm2835-1.68/ && sudo ./configure && sudo make && sudo make check && sudo make install")')
     do(msg="install wiringpi",
         cmd='run_command("sudo apt-get install wiringpi && cd /tmp && wget https://project-downloads.drogon.net/wiringpi-latest.deb && sudo dpkg -i wiringpi-latest.deb")')
     do(msg="apt-get update",
